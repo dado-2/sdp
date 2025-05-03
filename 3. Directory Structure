@@ -1,0 +1,10 @@
+/your-repo-name
+│
+├── README.md
+├── requirements.txt
+├── data/
+│   └── (upload your datasets here)
+├── src/
+│   └── (add your Python scripts here)
+└── notebooks/
+    └── (add your Jupyter notebooks here)
