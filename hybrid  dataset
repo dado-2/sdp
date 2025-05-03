@@ -1,0 +1,13 @@
+# Deep Learning Model
+model = Sequential([
+    Dense(32, activation='relu', input_shape=(X_train_selected.shape[1],)),
+    Dense(16, activation='relu'),
+    Dense(1, activation='sigmoid')
+])
+
+model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+model.fit(X_train_selected, y_train, epochs=10, batch_size=32)
+
+# Evaluate Model
+loss, accuracy = model.evaluate(X_test_selected, y_test)
+print(f"Hybrid Model Accuracy: {accuracy}")
